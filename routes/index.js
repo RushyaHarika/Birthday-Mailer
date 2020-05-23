@@ -30,7 +30,7 @@ router.post('/postbirthday', function(req,res){
       from: 'Dear Friend',
       to: req.body.email,
       subject: 'Birthday Wishes',
-      text: 'Hi ' + req.body.name+ ' Happy Birthday!!!'+'\n'+req.body.message
+      text: 'Hi ' + req.body.name + ',' + 'Happy Birthday!!!' + '\n' + req.body.message
     };
 
     transporter.sendMail(mailOptions, function(error, info){
