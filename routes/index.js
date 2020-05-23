@@ -21,8 +21,8 @@ router.post('/postbirthday', function(req,res){
     var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'akash.talluri.77@gmail.com',
-      pass: 'Akash.Talluri.77'
+      user: 'Your mail ID here',
+      pass: 'Your password here'
     }
     });
 
