@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday Mailer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<script type="text/javascript" src="javascripts/birthday.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body ng-app="birthdayApp">
+  <div class="container">
+  	<div class="col-md-4 col-md-offset-4" ng-controller="birthdayController">
+  		<form class="form-group">
+        <h1 style="text-align:center;color: blue">Birthday Mailer</h1>
+  			<label>Name :</label>
+  			<input class="form-control" type="text" ng-model="birth.name">
+  			<label>Mobile :</label>
+  			<input class="form-control" type="text" ng-model="birth.mobile">
+  			<label>Email :</label>
+  			<input class="form-control" type="email" ng-model="birth.email">
+  			<label>Date of Birth :</label>
+  			<input class="form-control" type="date" ng-model="birth.dob">
+  			<br>
+        <label>Message :</label>
+        <textarea class="form-control" ng-model="birth.message"></textarea>
+  			<button class="btn btn-info" ng-click="sendmail(birth)">Submit</button>
+  		</form>
+  	</div>
+  </div>
+</body>
+
+
+</html>
